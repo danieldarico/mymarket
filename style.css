@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Definir margem e padding para zero em todos os elementos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    /* Define a fonte para o corpo da página */
+    body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    }
+    
+    /* Adiciona uma margem na parte inferior do cabeçalho */
+    header {
+    margin-bottom: 50px;
+    }
+    
+    /* Centraliza o título no cabeçalho */
+    header h1 {
+    text-align: center;
+    }
+    
+    /* Estilo para o formulário */
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    }
+    
+    /* Estilo para cada grupo de elementos dentro do formulário */
+    .form-group {
+    margin-bottom: 20px;
+    width: 80%;
+    }
+    
+    /* Define o estilo para o rótulo */
+    label {
+    font-weight: bold;
+    }
+    
+    /* Estilo para os inputs de texto e número */
+    input[type="text"],
+    input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    }
+    
+    /* Estilo para o botão */
+    button {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 16px;
+    }
+    
+    /* Estilo para o botão "Adicionar item" */
+    #add-item {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    }
+    
+    /* Efeito hover para o botão "Adicionar item" */
+    #add-item:hover {
+    background-color: rgb(0, 206, 0);
+    }
+    
+    /* Estilo para o botão "Remover último item" */
+    #remove-last-item-btn {
+    background-color: rgb(163, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    }
+  
+ /* Mudança de cor do botão "remove-last-item-btn" quando o cursor passa sobre ele */
+#remove-last-item-btn:hover {
+    background-color: red;
+  }
+  
+  /* Estilos para a tabela */
+  table {
+    width: 100%; 
+    margin-top: 50px; 
+    border-collapse: collapse; 
+  }
+  
+  /* Estilos para as células da tabela */
+  th, td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+  }
+  
+  /* Estilo para as cabeçalhos da tabela */
+  th {
+    background-color: #ddd; 
+  }
+
+  

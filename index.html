@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon_io/apple-touch-icon.png">
+        <title>MyMarket</title>
+    </head>
+    <body>  
+        <!-- Cabeçalho da página -->
+        <header>
+            <h1>Minha lista de compras</h1>
+        </header>
+        <!-- Conteúdo principal da página -->
+        <main>
+                <!-- Formulário para adicionar itens na lista de compras -->
+                <form id="shopping-form">
+                    <!-- Grupo de formulário para o nome do item -->
+                    <div class="form-group">
+                        <!-- Rótulo para o campo de nome do item -->
+                        <label for="item-name">Nome do item:</label>
+                        <!-- Campo de entrada para o nome do item -->
+                            <input type="text" id="item-name" required>
+                    </div>
+                    <!-- Grupo de formulário para a quantidade do item -->
+                    <div class="form-group">
+                        <!-- Rótulo para o campo de quantidade do item -->
+                        <label for="item-quantity">Quantidade:</label>
+                        <!-- Campo de entrada para a quantidade do item -->
+                            <input type="number" id="item-quantity" required>
+                    </div>
+                    <!-- Grupo de formulário para o preço do item -->
+                    <div class="form-group">
+                        <!-- Rótulo para o campo de preço do item -->
+                        <label for="item-price">Preço:</label>
+                        <!-- Campo de entrada para o preço do item -->
+                            <input type="text" id="item-price" required>
+                    </div>
+                    <!-- Botão para adicionar um item na lista -->
+                        <button id="add-item"type="submit">Adicionar item</button>
+                    <!-- Botão para remover o último item da lista -->
+                        <button id="remove-last-item-btn">Remover último item</button>
+                </form>
+                <!-- Tabela para exibir a lista de compras -->
+            <table id="shopping-list-table">
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <!-- Colunas para o nome, quantidade, valor e total dos itens -->
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela -->
+                <tbody id="shopping-list-body">
+                </tbody>
+                <!-- Rodapé da tabela -->
+                <tfoot>
+                <tr>
+                    <!-- Linha para exibir o total de todos os itens na lista -->
+                    <td colspan="3">Total</td>
+                    <td id="total"></td>
+                </tr>
+                </tfoot>
+            </table>
+        
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
