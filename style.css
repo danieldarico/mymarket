@@ -18,7 +18,7 @@
     
     /* Adiciona uma margem na parte inferior do cabeçalho */
     header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     }
     
     /* Centraliza o título no cabeçalho */
@@ -141,4 +141,29 @@
     background-color: #ddd; 
   }
 
-  
+  @media only screen and (max-width: 600px) {
+    body {
+        margin: 20px; /* Reduz a margem para telas menores */
+    }
+
+    form {
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 20px); /* Margens de 10px em cada lado */
+    }
+
+    button {
+        width: calc(100% - 20px);
+    }
+
+    table {
+        margin-top: 20px; /* Reduz a margem superior da tabela em telas menores */
+    }
+}
