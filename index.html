@@ -8,39 +8,59 @@
         <title>MyMarket</title>
     </head>
     <body>  
+        <!-- Cabeçalho da página -->
         <header>
             <h1>MyMarket 🛒</h1>
         </header>
+        <!-- Conteúdo principal da página -->
         <main>
+                <!-- Formulário para adicionar itens na lista de compras -->
                 <form id="shopping-form">
+                    <!-- Grupo de formulário para o nome do item -->
                     <div class="form-group">
+                        <!-- Rótulo para o campo de nome do item -->
                         <label for="item-name">Nome do item:</label>
+                        <!-- Campo de entrada para o nome do item -->
                             <input type="text" id="item-name" required>
                     </div>
+                    <!-- Grupo de formulário para a quantidade do item -->
                     <div class="form-group">
+                        <!-- Rótulo para o campo de quantidade do item -->
                         <label for="item-quantity">Quantidade:</label>
+                        <!-- Campo de entrada para a quantidade do item -->
                             <input type="number" id="item-quantity" required>
                     </div>
+                    <!-- Grupo de formulário para o preço do item -->
                     <div class="form-group">
+                        <!-- Rótulo para o campo de preço do item -->
                         <label for="item-price">Preço:</label>
+                        <!-- Campo de entrada para o preço do item -->
                             <input type="text" id="item-price" required>
                     </div>
+                    <!-- Botão para adicionar um item na lista -->
                         <button id="add-item"type="submit">Adicionar item</button>
+                    <!-- Botão para remover todos os itens da lista -->
                         <button id="remove-all-items-btn">Remover todos os itens</button>
                 </form>
+                <!-- Tabela para exibir a lista de compras -->
             <table id="shopping-list-table">
+                <!-- Cabeçalho da tabela -->
                 <thead>
                     <tr>
+                        <!-- Colunas para o nome, quantidade, valor e total dos itens -->
                         <th>Item</th>
                         <th>Quantidade</th>
                         <th>Valor</th>
                         <th>Total</th>
                     </tr>
                 </thead>
+                <!-- Corpo da tabela -->
                 <tbody id="shopping-list-body">
                 </tbody>
+                <!-- Rodapé da tabela -->
                 <tfoot>
                 <tr>
+                    <!-- Linha para exibir o total de todos os itens na lista -->
                     <td colspan="3">Total</td>
                     <td id="total"></td>
                 </tr>
